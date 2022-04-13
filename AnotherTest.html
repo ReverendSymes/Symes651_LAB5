@@ -120,9 +120,20 @@ map.on('draw:created', function(e) {
   if (type === 'marker') {
     layer.bindPopup('A popup!');
   }
+  // var options = {tolerance: 0.01, highQuality: false};
+   // var simpLine = turf.simplify(layer, options);
 
+  // window.simpLine = simpLine;
+  var GJson = layer.toGeoJSON();
+  alert(GJson);
   editableLayers.addLayer(layer);
 });
+
+function drawMePls() {
+  editableLayers.addLayer(window.simpLine);
+  editableLayers.addLayer(simpLine);
+
+}
 
 
 </script>
