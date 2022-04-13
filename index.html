@@ -64,9 +64,7 @@ body {
             attribution: '© <a href="https://www.mapbox.com/contribute/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
 
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-                 attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-             }).addTo(map);
+
              // FeatureGroup is to store editable layers
              var drawnItems = new L.FeatureGroup();
              map.addLayer(drawnItems);
